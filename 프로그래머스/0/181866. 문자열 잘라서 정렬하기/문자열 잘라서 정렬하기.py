@@ -1,10 +1,8 @@
 def solution(myString):
-    #myString = myString.replace("x","")
-    
-    answer = myString.split("x")
-    answer = sorted(answer)
+    answer = sorted(myString.split("x"))
     
     result = []
+    
     for i in answer:
         if i == '':
             continue
@@ -12,4 +10,3 @@ def solution(myString):
             result.append(i)
     
     return result
-    
