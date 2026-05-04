@@ -1,6 +1,6 @@
 def solution(arr):
     answer = []
     for a in arr:
-        for i in range(a):
-            answer.append(a)
+        answer += [a] * a
+
     return answer
