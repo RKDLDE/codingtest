@@ -4,10 +4,7 @@ def solution(my_string, queries):
     
     for query in queries:
         s, e = query[0], query[1]+1
-        
-        sub = my_string[s:e]
-        re_sub = sub[::-1]
 
-        my_string = my_string[:s] + re_sub + my_string[e:]
+        my_string = my_string[:s] + my_string[s:e][::-1] + my_string[e:]
 
     return my_string
