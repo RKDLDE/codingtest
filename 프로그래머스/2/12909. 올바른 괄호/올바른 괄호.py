@@ -2,7 +2,7 @@ def solution(s):
     answer = []
     
     for i in s:
-        if i == "(":
+        if (i == "("):
             answer.append(i)
         
         else:
